@@ -1,6 +1,6 @@
-# AlbertAlisesSorribas.github.io
+# nicolasperezdeo.github.io
 
-https://aalises.github.io/AlbertAlisesSorribas.me/
+https://nicolasperezdeo.github.io/nicolasperezdeo.me/
 
 Simple Personal Page
 
