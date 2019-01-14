@@ -123,12 +123,20 @@ const MHH: ExperienceData = {
         <div>Working protoype of the script tested on a patient.</div>,
     ],
     additional_content: <div className="columns">
-        <div className="column is-full">
-            <figure className="image">
-                <img src={`assets/img/DHZ.jpg`} />
-                <figcaption>**To be changed**.</figcaption>
-            </figure>
-        </div>
+        <div className="tile is-parent" style={{padding: '3rem 0rem !important'}}>
+                <div className="tile is-child is-6">
+                    <figure className="image">
+                        <img src={`assets/img/DHZ_1.jpg`} />
+                        <figcaption>Testing Cochlear Implant device used.</figcaption>
+                    </figure>
+                </div>
+                <div className="tile is-child is-6">
+                    <figure className="image">
+                        <img src={`assets/img/DHZ_2.jpg`} />
+                        <figcaption>Me trying to focus on it :).</figcaption>
+                    </figure>
+                </div>
+            </div>
     </div>
 }
 const dataObject : TimelineDataObject[] = [
