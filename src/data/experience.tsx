@@ -2,168 +2,145 @@
 import * as React from "react";
 import { TimelineDataObject, ExperienceData } from "@/types";
 
-const QMENTA : ExperienceData = {
-    period: 'July 2017 - Now',
-    title: 'Software Developer',
+const SP : ExperienceData = {
+    period: 'Dec 2017 - Now',
+    title: 'Student Assistant',
     headingIcon: 'fa-brain',
-    place: 'Barcelona, Spain',
-    company: 'QMENTA Inc.',
-    iconURL: 'isologo_color.png',
+    place: 'Hamburg, Germany',
+    company: 'Univeristät Hamburg (Signal Processing Group)',
+    iconURL: 'SP_LOGO.png',
     responsabilities: [
-    <div><b>Lead Frond-End Developer</b> shaping the QMENTA product</div>,
-    <div>Developing <b>Continuous Deployment and Integration</b> pipelines and systems for the apps + Testing</div>,
-    <div>Development of <b>Virtual Reality (VR)</b> based neuroimaging interaction tools and apps</div>,
-    <div><b>Neuroimaging web-based visualizers</b> using Javascript/Node.JS/Three.JS for neuroimaging 
-data (DICOM / NIFTI / Fibers) or connectomics (Chord diagrams, matrices etc)</div>
+    <div>Helping with Undergraduate course 'Multidimensionale und Multimodale Signale' material</div>,
+    <div>Research group code maintainance and developing</div>,
+    <div>Research group team <a href="https://www.inf.uni-hamburg.de/en/inst/ab/sp/people.html" target="_blank">here</a></div>
     ],
     technologies: [
-        <div><b>Front-End:</b> React 16.5 (Suspense/Lazy API, Context API), Typescript, Redux/Redux-Zero, React Router v4, SASS, Styled Components, Parcel, Webpack, Formik...</div>,
-        <div><b>CI/CD:</b> Jenkins pipelines, Docker, Docker Compose, Kubernetes </div>,
-        <div><b>Testing:</b> Jest/Puppeteer (Legacy), Cypress (Current), PyTest </div>,
-        <div><b>Virtual Reality:</b> Unity Engine, Oculus Rift, C#</div>,
-        <div>Git (Bitbucket), JIRA for issue tracking, Confluence</div>,
-        <div><b>Methodologies:</b> Git flow for branching, Agile/Scrum for developing</div>
+        <div><b>Python</b></div>,
+        <div><b>LaTeX Beamer</b></div>,
+        <div>Git (GitLab)</div>,
     ],
     accomplishments: [
-        <div><b>Lead developer</b> of the QMENTA Platform Front-End and NICTS (Neuro Imaging Clinical Trial Suite)</div>,
-        <div>Implemented a <b>CD/CI system</b> for the Front-End products of QMENTA + Testing</div>,
-        <div><b>Published a novel Virtual Reality application</b> for visualizing neuroimaging data, available on the Oculus Rift Store, <a href="https://www.oculus.com/experiences/rift/1547231975368367/" target="_blank">here</a></div>,
-        <div><b>Wrote 2 articles on Medium/Dev.to</b> about <a href="https://medium.com/qmenta-tech-blog/preact-typescript-parcel-redux-zero-rebuilding-the-qmenta-front-end-focusing-on-performance-a7c879c5b288" target="_blank">the technologies used for the Front-End</a> and <a href="https://dev.to/aalises/dealing-with-asynchrony-when-writing-end-to-end-tests-with-puppeteer--jest-n37" target="_blank">Dealing with Asynchrony on e2e tests</a></div>,
-    ],
-    additional_content: <div className="tile is-ancestor">
-         <div className="tile is-parent is-12 is-vertical">
-            <div className="tile is-child is-12">
-                <figure className="image">
-                    <img src={`assets/img/QMENTA1.png`} />
-                    <figcaption>Register view of the QMENTA Platform (Front-end with React).</figcaption>
-                </figure>
-            </div>
-            <div className="tile is-parent" style={{padding: '3rem 0rem !important'}}>
-                <div className="tile is-child is-6">
-                    <figure className="image">
-                        <img src={`assets/img/VR1.png`} />
-                        <figcaption>Screenshots of Brain Fibers inside the BrainVis VR application.</figcaption>
-                    </figure>
-                </div>
-                <div className="tile is-child is-6">
-                    <figure className="image">
-                        <img src={`assets/img/VR2.png`} />
-                    </figure>
-                </div>
-            </div>
-            <div className="tile is-child">
-                <figure className="image">
-                    <img src={`assets/img/AMIScreenFE.png`} />
-                    <figcaption>Screenshot of the visualizer I developed using Javascript/Three.JS</figcaption>
-                </figure>
-            </div>
-            <div className="tile is-child">
-                <figure className="image">
-                    <img src={`assets/img/QMENTA2.png`} />
-                    <figcaption>Screenshot of the main view of the QMENTA Platform (Front-end with React / Preact)</figcaption>
-                </figure>
-            </div>
-         </div>
-    </div>
+    ]
 }
 
-const BCN_MEDTECH : ExperienceData = {
-    period: 'June 2016 - July 2017',
-    title: 'Software Developer',
-    place: 'Barcelona, Spain',
-    headingIcon: 'fa-vr-cardboard',
-    company: 'BCN-MedTech, SimBioSys group (Simulation, Imaging and Modelling for Biomedical Systems)',
-    iconURL: 'bcn_medtech.jpg',
+const ZBH : ExperienceData = {
+    period: 'Feb 2018 - Now',
+    title: 'IT Student Assistant',
+    headingIcon: 'fa-brain',
+    place: 'Hamburg, Germany',
+    company: 'Univeristät Hamburg (Bioinformatics Department)',
+    iconURL: 'UHH_LOGO.png',
     responsabilities: [
-    <div><b>Lead Developer</b> on the SimBioSys group on two native applications for helping doctors on the surgery planning of fetal and brain diseases</div>,
-    <div>The applications were supervised and tested by the medical staff of <i>La Maternitat Hospital</i> and IDIBAPS group</div>,
-    <div><b>Integrating Augmented Reality solutions</b> for surgery planning into the applications</div>,
-    <div>Developing minimal <b>Continuous Deployment and Integration</b> pipelines and systems for the apps</div>,
-    <div>Performing accuracy tests, reports and statistics/plots of the system for scientific purposes</div>,
+    <div>Assesment of the computational resources of the department</div>,
+    <div>Performance testing of a XEN and KVM hypervisor scenario</div>,
+    <div>Basic hardware maintainance and checking</div>,
+    <div>Software troubleshooting</div>
     ],
     technologies: [
-        <div><b>Native Application:</b> Qt Framework, C++, MITK (Medical Interaction ToolKit), ITK, VTK, OpenCV, ArUco (AR), SOFA (Modeling and Physics) </div>,
-        <div><b>CI/CD:</b> Jenkins pipelines for continuous deploying, Docker</div>,
-        <div><b>Testing:</b> QTest (Unit testing Framework for Qt) </div>,
-        <div>Git (Bitbucket) for version control</div>,
-        <div><b>Documentation and accuracy tests:</b> LaTeX, Python (statistics, Bland Altman plots)</div>
+        <div><b>Shell scripting</b> for performance testing</div>,
+        <div><b>MATLAB</b> for plotting results</div>,
+        <div><b>XEN</b> and <b>KVM</b> architectures</div>,
+        <div><b>Open Suse</b> Linux distribution</div>
     ],
     accomplishments: [
-        <div><b>Lead developer</b> of an application that helps doctors come to a better diagnosis on Twin-to-Twin Transfussion Syndrome</div>,
-        <div>Delivered a functional prototype at IDIBAPS meeting the goals of the project</div>,
-        <div>Presented a poster at the CARS (Computer Assisted Radiology and Surgery) conference about Deep Brain Stimulation</div>,
-    ],
-    additional_content: <div className="tile is-ancestor">
-        <div className="tile is-5 is-vertical is-parent">
-            <div className="tile is-child">
-                <figure className="image">
-                    <img src={`assets/img/testsclinical.jpg`} />
-                    <figcaption>Testing the application on a Clinical Environment at la Maternitat Hospital.</figcaption>
-                </figure>
-            </div>
-            <div className="tile is-child">
-                <figure className="image">
-                    <img src={`assets/img/ThreeFetoscopes.png`} />
-                    <figcaption>Model of the placenta with the fetoscopes.</figcaption>
-                </figure>
-            </div>
-        </div>
-        <div className="tile is-parent">
-            <div className="tile is-child">
-                <figure className="image">
-                    <img src={`assets/img/testtracker.jpg`} />
-                    <figcaption>Testing the Qt/MITK C++ Application with the Aurora EM Tracker</figcaption>
-                </figure>
-            </div>
-        </div>
-    </div>
+    ]
 }
 
-const KCL: ExperienceData = {
-    period: 'June 2015 - October 2015',
-    title: 'Research Assistant / Trainee',
+const NTSA: ExperienceData = {
+    period: 'September 2016 - June 2017',
+    title: 'Group Member',
     headingIcon: 'fa-heart',
-    place: 'London, UK',
-    company: "King's College London (Biomedical Engineering department, Medical Image Computing group).",
-    iconURL: 'KCL.jpg',
+    place: 'Barcelona, Spain',
+    company: "Universitat Pompeu Fabra (UPF), (Nonlinear Time Series Analysis Group).",
+    iconURL: 'UPF_LOGO.png',
     responsabilities: [
-    <div><b>Developing a Virtual Reality application</b> on <i>visualisation of 3D moving cardiac sequences</i> to help with the surgery planning of the <i>Hypoplastic Left Heart Syndrome</i> condition on children, together with the Evelina London Hospital of Children.</div>,
-    <div><b>Continous feedback and testing</b> of the application by the cardiologists on the hospital.</div>,
-    <div>Being involved in all the phases of the application, from design to implementation to algorithms of processing to integration with a VR environment to documentation</div>,
+    <div>Writing Bachelor thesis inside the research group.</div>,
+    <div>Being involved in all research meetings and research seminars.</div>,
     ],
     technologies: [
-        <div><b>Application:</b> Unity Engine with ZSpace, C#, Javascript</div>,
+        <div><b>MATLAB</b></div>,
         <div><b>Documentation:</b> LaTeX</div>,
-        <div><b>Version control:</b> Git (Github)</div>,
+        <div><b>High Performance Cluster (HPC):</b> for simulations</div>,
     ],
     accomplishments: [
-        <div><b>Developed</b> a fully functional prototype for Hypoplastic Left Heart Syndrome surgery planning delivered on time</div>,
-        <div>With this prototype, we managed to secure a grant on 2016, of the NHS (National Health Institute), for continuing the project up to 2 years</div>,
-        <div>Wrote my Bachelor's thesis on the results of the project and received major distinction and honors for it</div>
+        <div>Wrote my Bachelor's thesis on Chimera states, a particularly interesting state of simple coupled oscillator networks.</div>,
+        <div>First publication in the XXXVII Dynamics Days Europe Book of Abstracts, can be found <a href="http://static.akcongress.com/downloads/ddays/dynamics-days2017-book-of-abstracts.pdf" target="_blank">here</a>, page 53.</div>
+
     ],
     additional_content: <div className="columns">
         <div className="column is-two-thirds no-padding">
             <figure className="image">
-                <img src={`assets/img/usingapp.jpg`} />
-                <figcaption>Clinical staff from the Evelina London Hospital of Children testing the Application.</figcaption>
-            </figure>
-        </div>
-        <div className="column no-padding">
-            <figure className="image">
-                <img src={`assets/img/screnshot_KCL.png`} />
-                <figcaption>Render of ultrasound Heart Data in VR.</figcaption>
+                <img src={`assets/img/chimera.gif`} />
+                <figcaption>Chimera state phase representation over time.</figcaption>
             </figure>
         </div>
     </div>
 }
 
+const MWC: ExperienceData = {
+    period: 'February 2017 - March 2017',
+    title: 'Information Technology Engineer',
+    headingIcon: 'fa-heart',
+    place: 'Barcelona, Spain',
+    company: "Fira Barcelona, Mobile World Congress.",
+    iconURL: 'MWC_LOGO_D.png',
+    responsabilities: [
+    <div>Configuring Internet services to the different areas of GSMA.</div>,
+    <div>Presenting the services to the responsibles to show the proper use.</div>,
+    <div>Troubleshooting different goods.</div>
+    ],
+    technologies: [
+        <div><b>Cisco</b></div>,
+        <div><b>Fluke networks</b></div>
+    ],
+    accomplishments: [
+    ],
+    additional_content: <div className="columns">
+        <div className="column is-full">
+            <figure className="image">
+                <img src={`assets/img/mwc.png`} />
+                <figcaption>First day of congress.</figcaption>
+            </figure>
+        </div>
+    </div>
+}
+const MHH: ExperienceData = {
+    period: 'July 2016 - September 2016',
+    title: 'Research trainee',
+    headingIcon: 'fa-heart',
+    place: 'Hannover, Germany',
+    company: "Deutsches HörZentrum Hannover, Medizinische Hochschule Hannover",
+    iconURL: 'DHZMHH.png',
+    responsabilities: [
+    <div>Developing a method for a longer recording of neural response from a cochlear implant, following <a href="https://www.ncbi.nlm.nih.gov/pubmed/22328183" target="_blank">this</a> work .</div>,
+    <div>Implementing couple of sections for Android App 'MusIC4all'</div>,
+    ],
+    technologies: [
+        <div><b>Python</b> for the Cochlear Ltd. Nucleus API </div>,
+        <div><b>Android Studio</b></div>
+    ],
+    accomplishments: [
+        <div>Working protoype of the script tested on a patient.</div>,
+    ],
+    additional_content: <div className="columns">
+        <div className="column is-full">
+            <figure className="image">
+                <img src={`assets/img/mwc.jpg`} />
+                <figcaption>LOKOS.</figcaption>
+            </figure>
+        </div>
+    </div>
+}
 const dataObject : TimelineDataObject[] = [
     {id: 'header', medium: true, data: 'Now'},
-    {id: 'item', data: QMENTA},
-    {id: 'item', data: BCN_MEDTECH},
-    {id: 'header', medium: false, data: '2016'},
-    {id: 'item', data: KCL},
-    {id: 'header', medium: true, data: '2015'}
+    {id: 'item', data: ZBH},
+    {id: 'header', medium: true, data: '2018'},
+    {id: 'item', data: SP},
+    {id: 'item', data: MWC},
+    {id: 'header', medium: true, data: '2017'},
+    {id: 'item', data: NTSA},
+    {id: 'item', data: MHH},
+    {id: 'header', medium: true, data: '2016'}
 ];
 
 //Data object

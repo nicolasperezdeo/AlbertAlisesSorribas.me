@@ -10,7 +10,7 @@ interface ExperienceData {
     iconURL: string,
     responsabilities: any[],
     technologies: any[],
-    accomplishments: any[],
+    accomplishments?: any,
     additional_content?: any
 }
 

@@ -17,7 +17,7 @@ export default ({name, role}) => {
               </div>
               <div className="column">
                 <figure className="image is-180x180">
-                  <img className="is-rounded" src="assets/img/me.jpg" />
+                  <img className="is-rounded" src="assets/img/me.png" />
                 </figure>  
               </div>
           </div>

@@ -1,5 +1,5 @@
 import * as React from "react";
-
+ 
 export default ({period, headingIcon, place, title, company, iconURL, responsabilities, technologies, accomplishments, additional_content}) => {
     return(
         <div className="timeline-item">
@@ -11,7 +11,7 @@ export default ({period, headingIcon, place, title, company, iconURL, responsabi
                         <div className="column">
                             <figure className="image is-96x96">
                                 <img src={`assets/icons/${iconURL}`} />
-                            </figure> 
+                            </figure>
                         </div>
                         <div className="column is-four-fifths">
                             <p className="heading">{period}</p>
@@ -27,13 +27,19 @@ export default ({period, headingIcon, place, title, company, iconURL, responsabi
                                 <ul>
                                     {technologies.map((el, idx) => <li key={`tech-${idx}`}>{el}</li>)}                                    
                                 </ul>
-                                <h2 className="title is-size-6 has-text-grey-dark">Accomplishments</h2>
-                                <ul>
-                                    {accomplishments.map((el, idx) => <li key={`acc-${idx}`}>{el}</li>)}                                    
-                                </ul>
+                                {accomplishments && accomplishments.length ?
+                                    <React.Fragment>
+                                    <h2 className="title is-size-6 has-text-grey-dark">Accomplishments</h2>
+                                    <ul>
+                                        {accomplishments.map((el, idx) => <li key={`acc-${idx}`}>{el}</li>)}                                    
+                                    </ul>
+                                    </React.Fragment> : null
+                                }
+                                {additional_content ?
                                 <div className="box" style={{paddingTop: '3rem'}}>
-                                    {additional_content}
-                                </div>
+                                 {additional_content}
+                                </div> : null
+                                }
                             </div>
                         </div>
                     </div>

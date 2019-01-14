@@ -4,7 +4,7 @@ export default () => {
     return (
       <div className="content">
         <p className="is-size-6 has-text-grey">
-            Passionate about designing, developing and deploying software that helps and amazes people.
+            Passionate about researching, developing and finding solutions that helps and amazes people. Also in Music.
             From Barcelona.
         </p>
       </div>

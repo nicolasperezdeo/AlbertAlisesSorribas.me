@@ -18,7 +18,7 @@ export default () =>{
                     <div className="container">
                         <div className="columns">
                             <div className="column is-four-fifths is-offset-1">
-                                <Header name="Albert Alises Sorribas" role="Software Developer"/>
+                                <Header name="Nicolas Perez de Olaguer" role="Researcher in Intelligent Adaptive Systems"/>
                                 <SectionBar/>
                                 <div className="column is-full">
                                     <Experience/>
