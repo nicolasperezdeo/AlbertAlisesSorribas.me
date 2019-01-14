@@ -28,7 +28,7 @@ const UPF_DEGREE : EducationData = {
 }
 
 const RMIT_DEGREE : EducationData = {
-    headingIcon: 'fa-robot', 
+    headingIcon: 'fa-user-graduate', 
     period: 'February 2016 - July 2016', 
     iconURL: 'FCT_LOGO.jpg', 
     place: 'Lisbon, Portugal',
@@ -52,7 +52,7 @@ const RMIT_DEGREE : EducationData = {
 }
 
 const UPF_MASTER : EducationData = {
-    headingIcon: 'fa-briefcase-medical', 
+    headingIcon: 'fa-robot', 
     period: 'September 2017 - Present', 
     iconURL: 'UHH_LOGO.png', 
     university: 'Universität Hamburg', 

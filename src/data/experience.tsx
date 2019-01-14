@@ -5,7 +5,7 @@ import { TimelineDataObject, ExperienceData } from "@/types";
 const SP : ExperienceData = {
     period: 'Dec 2017 - Now',
     title: 'Student Assistant',
-    headingIcon: 'fa-brain',
+    headingIcon: 'fa-signal',
     place: 'Hamburg, Germany',
     company: 'Univeristät Hamburg (Signal Processing Group)',
     iconURL: 'SP_LOGO.png',
@@ -26,7 +26,7 @@ const SP : ExperienceData = {
 const ZBH : ExperienceData = {
     period: 'Feb 2018 - Now',
     title: 'IT Student Assistant',
-    headingIcon: 'fa-brain',
+    headingIcon: 'fa-terminal',
     place: 'Hamburg, Germany',
     company: 'Univeristät Hamburg (Bioinformatics Department)',
     iconURL: 'UHH_LOGO.png',
@@ -80,7 +80,7 @@ const NTSA: ExperienceData = {
 const MWC: ExperienceData = {
     period: 'February 2017 - March 2017',
     title: 'Information Technology Engineer',
-    headingIcon: 'fa-heart',
+    headingIcon: 'fa-network-wired',
     place: 'Barcelona, Spain',
     company: "Fira Barcelona, Mobile World Congress.",
     iconURL: 'MWC_LOGO_D.png',
@@ -98,7 +98,7 @@ const MWC: ExperienceData = {
     additional_content: <div className="columns">
         <div className="column is-full">
             <figure className="image">
-                <img src={`assets/img/mwc.png`} />
+                <img src={`assets/img/mwc_1.png`} />
                 <figcaption>First day of congress.</figcaption>
             </figure>
         </div>
@@ -107,7 +107,7 @@ const MWC: ExperienceData = {
 const MHH: ExperienceData = {
     period: 'July 2016 - September 2016',
     title: 'Research trainee',
-    headingIcon: 'fa-heart',
+    headingIcon: 'fa-brain',
     place: 'Hannover, Germany',
     company: "Deutsches HörZentrum Hannover, Medizinische Hochschule Hannover",
     iconURL: 'DHZMHH.png',
@@ -125,8 +125,8 @@ const MHH: ExperienceData = {
     additional_content: <div className="columns">
         <div className="column is-full">
             <figure className="image">
-                <img src={`assets/img/mwc.jpg`} />
-                <figcaption>LOKOS.</figcaption>
+                <img src={`assets/img/DHZ.jpg`} />
+                <figcaption>**To be changed**.</figcaption>
             </figure>
         </div>
     </div>
