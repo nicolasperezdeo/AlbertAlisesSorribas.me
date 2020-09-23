@@ -24,7 +24,7 @@ const Main = () => {
       </Helmet>
       <FixedHeaderContainer>
         <Particles params={ParticlesData} style={{ position: 'fixed' }} />
-        <Header name="Albert Alises Sorribas" role="Software Developer. VR, Web and whatnot" />
+        <Header name="Nicolas Perez de Olaguer" role="Software Developer. VR, Web and whatnot" />
       </FixedHeaderContainer>
       <ContentContainer>
         <div className="column is-two-thirds is-offset-2">
